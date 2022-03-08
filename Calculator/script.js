@@ -201,18 +201,15 @@ let val1 = val2 = val3 = '';
 let opt = '';
 
 function including(str) {
-    if (opt == '') {
-        document.getElementById('result').value = document.getElementById('result').value + str;
-    } else if (opt != '' && val2 == '') {
+    if (val1 == '' & val2 == '') {
         document.getElementById('result').value = str;
     } else {
         document.getElementById('result').value = document.getElementById('result').value + str;
     }
-
     if (opt == '') {
-        val1 = document.getElementById('result').value;
+        val1 = val1 + str;
     } else {
-        val2 = document.getElementById('result').value;
+        val2 = val2 + str;
     }
 }
 
@@ -224,7 +221,6 @@ function operator(str) {
     }
     opt = str;
     document.getElementById('result').value = val1 + str;
-
 }
 
 /*============================= FUNCTION CLEAR====================== */
@@ -250,7 +246,12 @@ function del() {
 /*============================= FUNCTION EQUALTO====================== */
 
 function equal() {
-    val1 = eval(val1 + ' ' + opt + ' ' + val2);
-    val2 = cal = '';
-    document.getElementById('result').value = val1;
+    try {
+        val1 = eval(val1 + ' ' + opt + ' ' + val2);
+        val2 = cal = '';
+        document.getElementById('result').value = val1;
+    } catch (e) {
+        document.getElementById('result').value = e;
+        val1 = val2 = cal = '';
+    }
 }
