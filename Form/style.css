@@ -1,0 +1,20 @@
+.fontchange {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}
+
+label {
+    color: white;
+}
+
+.bg-one {
+    background-color: rgb(102, 100, 100);
+    border-radius: 20px;
+}
+
+.choice-div {
+    color: white;
+}

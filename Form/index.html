@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">FORM</h1>
+        <div class="row mt-4 mb-4  border border-1 bg-one">
+            <div class="col-sm-12 col-md-6  col-lg-6 col-xl-6 col-xxl-6 d-flex align-items-center mt-4">
+                <div>
+                    <img src="./images/undraw_hamburger_-8-ge6.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 offset-xl-1 offset-md-1 offset-lg-1 offset-xxl-1 col-xxl-4 box-bord me-1">
+                <form id="survey-form">
+                    <div>
+                        <label class="label-control fs-5 fontchange" for="firstname" class="">First Name</label>
+                        <input id="first-name" class="inputbox form-control" type="text" placeholder="John" name="fname" maxlength="20" required>
+                    </div>
+                    <div class="mt-2">
+                        <label class="label-control fs-5 fontchange" for="Lastname">Last Name</label >
+                        <input id="last-name" class="inputbox form-control" type="text"  placeholder="Smith" name="lname" maxlength="20" required>
+                    </div>
+                    <div class="mt-2">
+                        <label class="label-control fs-5 fontchange" for="address">Address</label >
+                        <input id="data" class="inputbox form-control" type="text" placeholder="Location" name="address" required>
+                    </div>
+                    <div class="mt-2">
+                        <label class="label-control fs-5 fontchange" for="pincode">PinCode</label>
+                        <input id="data" class="inputbox form-control" type="text" placeholder="621214" maxlength="6" required name="fname">
+                    </div>
+                    <div class="mt-2">
+                        <label class="label-control fs-5 fontchange" for="state">State</label >
+                        <input id="data" class="inputbox form-control" type="text" placeholder="Tamil Nadu" required name="fname">
+                    </div>
+                    <div class="mt-2">
+                        <label class="label-control fs-5 fontchange" for="Country">Country</label>
+                        <input id="data" class="inputbox form-control " type="text" placeholder="india" required name="fname">
+                    </div>
+                    <div class="mt-2 choice-div">
+                        <label class="label-control fs-5 fontchange" for="gender">Gender</label>
+                        <input id="data" class="choice ms-4" type="radio" name="gender" value="men"> Male
+                        <input id="data" class="choice ms-4" type="radio" name="gender" value="women"> Female
+                    </div>
+                    <div class="mt-2 choice-div">
+                        <label class="label-control fs-5 fontchange" for="food">Food</label>
+                        <input id="data" class="choice ms-3 fontchange" type="radio" placeholder="Food" name="choice1"> Noodles
+                        <input id="data" class="choice ms-3 fontchange" type="radio" placeholder="Food" name="choice2"> Veg Rice
+                        <input id="data" class="choice ms-3 fontchange" type="radio" placeholder="Food" name="choice1"> Biriyani <br>
+                        <input id="data" class="choice  fontchange" type="radio" placeholder="Food" name="choice2"> Chicken Rice
+                        <input id="data" class="choice ms-3 fontchange" type="radio" placeholder="Food" name="choice1"> Rice
+                    </div>
+                    <div class="btn-lg  mt-2 mb-3 d-flex justify-content-center">
+                        <button class="button btn-lg btn btn-success" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <p id="description">PLEASE KIDLY FILL THE ALL FIELDS FOR GOOD EXPERIENCE</p>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
