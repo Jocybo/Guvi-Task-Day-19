@@ -1,7 +1,11 @@
+/*============================= RESPONSIVE TABLE =========================== */
+
 let div = document.createElement('div');
 div.classList.add('table-responsive');
 div.setAttribute('id', 'tablediv');
 document.getElementById('container').appendChild(div);
+
+/*============================== CREATING THE TABLE================================== */
 
 let table = document.createElement('table');
 table.setAttribute('id', 'table');
@@ -16,9 +20,6 @@ let firstrow = document.createElement('tr');
 firstrow.setAttribute('id', 'firstrow');
 thead.appendChild(firstrow);
 
-/* let secondrow = document.createElement('tr');
-secondrow.setAttribute('id', 'secondrow');
-thead.appendChild(secondrow); */
 let tablehead = document.createElement('th');
 tablehead.innerText = "First Name";
 firstrow.appendChild(tablehead);
@@ -51,6 +52,7 @@ let head7 = document.createElement('th');
 head7.innerText = "Food";
 firstrow.appendChild(head7);
 
+/*================================ APPEND THE USER INPUTS TO THE TABLE===================== */
 
 function append() {
 
@@ -62,9 +64,6 @@ function append() {
             console.log(gen);
         }
     }
-
-
-
 
     let rowone = document.createElement('tr');
     document.getElementById('table').appendChild(rowone);
