@@ -100,7 +100,7 @@ function append() {
 
     for (i = 0; i < options.length; i++) {
         if (options[i].selected) {
-            tdata8.innerHTML += `${options[i].value}`;
+            tdata8.innerHTML += `${options[i].value}<br>`;
         }
     }
     rowone.appendChild(tdata8);
